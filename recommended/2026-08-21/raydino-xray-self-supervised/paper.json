@@ -1,0 +1,15 @@
+{
+  "id": "raydino-xray-self-supervised",
+  "title": "Advancing human-centric AI for robust X-ray analysis through holistic self-supervised learning",
+  "authors": ["Théo Moutakanni", "Piotr Bojanowski", "Guillaume Chassagnon", "Céline Hudelot", "Armand Joulin", "Yann LeCun", "Matthew J. Muckley", "Maxime Oquab", "Marie-Pierre Revel", "Maria Vakalopoulou"],
+  "venue": "Nature Communications",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41467-026-76076-4",
+  "abstract": "Abstract Foundational artificial intelligence models are gaining traction in various applications, including medical fields like radiology. However, medical foundation models are often tested on limited tasks, leaving their generalisability and biases unexplored. Here we introduce RayDINO, a large-scale self-supervised visual encoder for chest X-rays trained on 840,000 images and evaluated on 82,000 images sourced from 12 publicly available datasets. We compare RayDINO to previous state-of-the-art models across nine radiology tasks, from classification and dense segmentation to text generation, and provide an in-depth analysis of population, age and sex biases of our model. Our findings suggest that self-supervision enables patient-centric analysis useful in clinical workflows, allowing for a more holistic interpretation of X-rays. With RayDINO and small task-specific adapters, we reach state-of-the-art results and improve generalization to unseen populations while mitigating bias, illustrating the versatility and robustness of foundation models.",
+  "axes": ["연령·성별 편향", "기관 간 일반화"],
+  "takeaway": "82,000장의 외부 흉부 X선 데이터로 검증한 자기지도학습 인코더 RayDINO가 9개 방사선 과제에서 최고 수준 성능을 보이면서 인구·연령·성별 편향을 함께 완화했다.",
+  "relevance": "본 코호트는 남 136명/여 136명으로 성비가 균형 잡혀 있고 연령대가 9~87세로 넓게 분포하는데, RayDINO가 강조하는 연령·성별 편향 분석 프레임이 이런 이질적 인구 구성에서 모델 성능을 재점검하는 데 참고가 될 수 있다.",
+  "caveat": "본 코호트는 272건, 153명 규모의 단일(가상) 기관 데이터로 RayDINO의 82,000장 외부 검증 규모와는 차원이 달라, 편향 완화 효과를 그대로 재현해 확인할 수는 없다.",
+  "check": "RayDINO 기반 어댑터를 우리 코호트의 No Finding 대 이상 소견 분류에 적용했을 때 연령대별(소아·고령) 성능 격차가 실제로 줄어드는지 확인해볼 만하다."
+}

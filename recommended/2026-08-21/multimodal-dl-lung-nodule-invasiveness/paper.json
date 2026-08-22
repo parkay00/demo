@@ -1,0 +1,15 @@
+{
+  "id": "multimodal-dl-lung-nodule-invasiveness",
+  "title": "Multimodal deep learning for preoperative invasiveness stratification of lung adenocarcinoma spectrum nodules",
+  "authors": ["Hongtao Zhang", "Ting Xue", "Zhe Zhang", "Xiaoxing Ye", "Zhijun Mai", "Yongsheng Xie", "Jianwei Li", "Honghong Luo", "Weili Tan", "Yujian Zou", "Dehong Luo", "Lijian Liu"],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03062-x",
+  "abstract": "Preoperative ternary stratification of lung adenocarcinoma-spectrum nodules remains challenging, particularly for minimally invasive adenocarcinoma (MIA). We developed and externally validated a multimodal deep-learning framework integrating three-dimensional CT nodule patches with structured radiological semantic features to stratify atypical adenomatous hyperplasia/adenocarcinoma in situ (AAH/AIS), MIA, and invasive adenocarcinoma (IAC). Consecutive patients with surgically resected, pathologically confirmed nodules were retrospectively enrolled from three centers, with postoperative pathology as the reference standard. The Center 1 development cohort included 2004 patients/2208 nodules and was split at the patient level into training (1603/1764) and internal validation (401/444); external validation used Center 2 (446/483) and Center 3 (276/378). Internally, the multimodal model achieved an AUC of 0.914 (95% CI, 0.894–0.932), exceeding CT image-only (0.874; absolute gain, 0.040; P < 0.001) and semantic-only (0.867; absolute gain, 0.047; P < 0.001) models. External AUCs were 0.879 (0.856–0.902) in Center 2 and 0.895 (0.868–0.917) in Center 3, with significant improvements over CT image-only and semantic-only models. These findings support structured radiological semantic features as a clinically interpretable complementary input to CT representations and could inform preoperative invasiveness stratification in decision-support workflows for preoperatively suspected and surgically considered lung adenocarcinoma-spectrum nodules.",
+  "axes": ["기관 간 일반화", "구조화 판독 소견 결합"],
+  "takeaway": "3개 기관 2700여 명 코호트에서 CT 영상과 구조화된 판독 소견을 결합한 다중모달 모델이 영상 단독·소견 단독 모델보다 폐선암 스펙트럼 결절의 침습도 예측 AUC를 유의하게 높였다(내부 0.914, 외부 0.879~0.895).",
+  "relevance": "본 코호트에서 Nodule 소견이 7건 존재하며 다수 사례가 Atelectasis|Infiltration, Effusion|Infiltration 등 복합 라벨로 기록돼 있어, 영상 소견과 구조화 텍스트를 함께 활용하는 다중모달 접근이 복합 소견 해석에 참고될 수 있다.",
+  "caveat": "이 논문은 흉부 CT 결절 검체이며 본 코호트는 단순 흉부 X선(PA 184건, AP 88건) 자료라 모달리티가 달라, 보고된 AUC 향상폭을 본 데이터로 확인할 수는 없다.",
+  "check": "구조화 판독 소견(예: 소견 라벨 조합)을 영상 특징과 결합했을 때 본 코호트의 No Finding vs 이상 소견 분류 정확도가 실제로 개선되는지 시험해볼 만하다."
+}
